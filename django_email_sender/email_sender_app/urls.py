@@ -4,4 +4,5 @@ from . import views
 
 urlpatterns = [
     path('send-mail', views.index),
+    path("sendapiemail",views.emailsender.as_view())
 ]

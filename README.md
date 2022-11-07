@@ -1,5 +1,5 @@
 # Django-Email_Sender
-Send email from Gmail Id in Django using HTML Template
+Send email from Gmail Id in Django using HTML Template OR using Rest_Framework api
 
 ## Pre-Requisites
 - Python 3.8
@@ -15,6 +15,10 @@ Send email from Gmail Id in Django using HTML Template
   - Run `python email_project/manage.py runserver` to start the server
 
   - Open [http://127.0.0.1:8000/api/send-mail](http://127.0.0.1:8000/api/send-mail) to start
+
+  - To Run rest api mail sender
+
+  - Open [http://127.0.0.1:8000/api/send-api-mail](http://127.0.0.1:8000/api/send-api-mail) to start
 
 - Make changes in the **views.py** file of the **email_sender_app** directory inside the `send_mail()` method to add your *mail address* and the *recipients mail address* accordingly.
 
