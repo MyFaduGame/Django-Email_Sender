@@ -38,9 +38,8 @@ class emailsender(APIView):
         if serializer.is_valid():
             try:
                 send_mail(
-                    'Congratulations!',
-                    'You are lucky to receive this mail.',
-                    serializer.data['email'],  # TODO: Update this with your mail id
+                    f'Hello,',serializer.data['name'],
+                    serializer.data['email'],     # TODO: Update this with your mail id
                     [serializer.data['remail']],  # TODO: Update this with the recipients mail id
                     html_message=serializer.data['body'],
                     fail_silently=False,
